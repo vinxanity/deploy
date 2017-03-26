@@ -21,3 +21,16 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 
+Route::group(['prefix' => '/admin', 'middleware' => 'auth.admin'], function () {
+  Route::get('/', function () {
+    return "HOME ADMIN";
+  });
+  Route::get('/prodotti', function () {
+      return "PRODOTTI ADMIN";
+  });
+  Route::get('/r3', function () {
+    return "3";
+  });
+});
+
+
