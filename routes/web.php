@@ -33,4 +33,9 @@ Route::group(['prefix' => '/admin', 'middleware' => 'auth.admin'], function () {
   });
 });
 
+Route::get('/setlocale/{locale}', function ($locale) {
+	session(['locale' => $locale]);
+    return redirect('/');
+});
+
 

@@ -91,5 +91,10 @@
                 </div>
             </div>
         </div>
+        <a href="/setlocale/it">italiano</a><br>
+        <a href="/setlocale/en">inglese</a><br>
+        <h1>{{ trans('homepage.main') }}</h1>
+        <h3>{{ trans('homepage.secondary') }}</h3>
+        <button>{{ trans('homepage.button') }}</button>
     </body>
 </html>
