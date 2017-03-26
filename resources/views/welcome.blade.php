@@ -91,6 +91,7 @@
                 </div>
             </div>
         </div>
+        <i class="fa fa-address-book" aria-hidden="true"></i>
         <a href="/setlocale/it">italiano</a><br>
         <a href="/setlocale/en">inglese</a><br>
         <h1>{{ trans('homepage.main') }}</h1>
